@@ -1,0 +1,471 @@
+/*
+CSS Styles: Html - CSS resource
+Color Palette:
+   
+      grey-tan: #9B9A94
+      soft-pink: #E0CBC4
+      pink-beige: #EBE4DE
+      black: #131310
+Table of Contents
+###########################################################
+1.0 -Reset   
+2.0 -Fonts
+3.0 -Global Styles
+4.0 -Header
+    4.1 -img
+    4.2 -nav
+5.0 -Body
+    5.1 -a 
+    5.2 -img 
+    5.3 -h1
+    5.4 -h2
+    5.5 -h3
+    5.6 -p 
+    5.7 -section
+    5.8 -form
+6.0 -Footer
+7.0 -Media Queries
+*/
+
+
+
+
+/*#################################################### -Fonts ####################################################*/
+
+
+body {
+  font-family: 'Khula', sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+}
+
+.button {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+/*#################################################### -Global Styles ####################################################*/
+body{
+    background-color: green;
+}
+
+ a {		
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+	color: rgb(80, 5, 9);
+}
+
+a:active {
+	color: rgb(110, 7, 59);
+}
+
+ ul li {
+    display: inline;
+	 padding: 8px;
+  }
+  
+
+
+/*#################################################### -Header ####################################################*/
+header{
+	
+  background-color: rgb(165, 161, 140);	
+  text-align: center;		
+}
+
+.nav {
+	padding: 12px;
+}
+
+   .hidden {
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+  }
+
+div .hero{
+     b image: url("../img/sparkle.jpeg");   /*--- step out of css folder and into img folder ../img/ */
+     background-repeat: no-reackground-ipeat;
+     background-position: top;
+     background-attachment: fixed;
+	 max-height: 460px;
+ }
+
+main{
+	padding: 5%;
+}
+
+
+
+   ol{
+        list-style-image: url('../img/heart.png')  /*--- step out of css folder and into img folder ../img/filename.png    */
+    } 
+
+
+  /*####### -dropdown ####*/
+  .dropdown {
+    
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #380e0b;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #200f16;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+    /*#############- Hero ###############*/
+.hero{ 
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.hero img{
+  border-radius: 80%;
+}
+/*#################### -Form #########################*/
+
+form{
+	max-width: 650px;
+	background: rgb(#996633);
+	padding: 30px 30px 15px 30px;
+	border: 5px solid rgb(66, 66, 63);
+}
+
+fieldset {
+	display: flex;
+	text-align: left;
+}
+
+input{
+  width: 80%;
+  padding: 10px;	
+  margin: 5px;	
+}
+
+input[type=text]:focus {
+  background-color: rgb(114, 81, 21);
+}
+
+    
+/*#################################################### -Footer ####################################################*/
+
+
+
+
+p.copyright {
+  color: #fff;
+  line-height: 40px;
+  font-size: 0.7em;
+}
+
+
+footer{
+	background-color: #86721728;
+  color: #EBE4DE;
+ text-align: center;
+}
+footer .right{
+
+  text-align: right;
+  margin-right: 5%;
+}
+
+footer ul{
+padding: 1%;
+display:inline-flex;
+margin:5px;
+
+}
+
+
+
+/*#################################################### -Media Queries #################################################*/
+      
+      
+
+      /*----to use font awesome fonts for styling
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        padding-left: 1.3em;
+      }
+      li:before {
+        content: "\f00c";                FontAwesome Unicode 
+        font-family: FontAwesome;
+        display: inline-block;
+        margin-left: -1.3em;             same as padding-left set on li
+        width: 1.3em;                    same as padding-left set on li 
+      }
+      ------*/
+
+/*############# -masonary blog ##########*/
+
+/**
+ * RESET
+ * Reference: http://meyerweb.com/eric/tools/css/reset/
+ */
+
+.blog{
+
+  color: rgb(199, 180, 72);
+}
+ article, aside, details, figcaption, figure,
+ footer, header, hgroup, main, menu, nav, section {
+   display: block;
+ }
+ 
+ body {
+   line-height: 1.618;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ ol, ul {
+   list-style: none;
+ }
+ 
+ blockquote, q {
+   quotes: none;
+ }
+ 
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+   content: '';
+   content: none;
+ }
+ 
+ table {
+   border-collapse: collapse;
+   border-spacing: 0;
+ }
+ 
+ a {
+   text-decoration: none;
+ }
+ 
+ code, pre, samp {
+   font-family: monospace;
+ }
+ 
+ /**
+  * BASIC TYPE
+  */
+ 
+ img, video {
+   max-width: 100%;
+   vertical-align: middle;
+ }
+ 
+ p:not(:last-child) {
+   margin: 0 0 1em;
+ }
+ 
+ h1, h2, h3, h4 {
+   margin: .5em 0 .75em;
+   line-height: 1.3;
+ }
+ 
+ h1 {
+   font-size: 1.5em;
+ }
+ 
+ h2 {
+   font-size: 1.25em;
+ }
+ 
+ h3 {
+   font-size: 1.125em;
+ }
+ 
+ h4 {
+   font-size: 1em;
+ }
+ 
+ /**
+  * BOX HACKING
+  */
+ 
+ html {
+   box-sizing: border-box;
+ }
+ 
+ *,
+ *:before,
+ *:after {
+   box-sizing: inherit;
+ }
+ .wrapper { 
+   max-width: 1280px;
+   margin-right: auto;
+   margin-left: auto;
+   padding: 1.5em;
+ }
+ body {
+   background-color: #919489;
+   color: #333333;
+ }
+ .masonry-wrapper {
+   padding: 1.5em;
+   max-width: 960px;
+   margin-right: auto;
+   margin-left: auto;
+ }
+ .masonry {
+   columns: 1;
+   column-gap: 10px;
+ }
+ .masonry-item {
+   display: inline-block;
+   vertical-align: top;
+   margin-bottom: 10px;
+ }
+ @media only screen and (max-width: 1023px) and (min-width: 768px) {  .masonry {
+     columns: 2;
+   }
+ }
+ @media only screen and (min-width: 1024px) {
+   .masonry {
+     columns: 3;
+   }
+ }
+ .masonry-item, .masonry-content {
+   border-radius: 5px;
+   overflow: hidden;
+ }
+ .masonry-item {
+   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, .3));
+   transition: filter .25s ease-in-out;
+ }
+ .masonry-item:hover {
+   filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .3));
+ }
+ .masonry-content {
+   overflow: hidden;
+ }
+ .masonry-item {
+   color: #cfaa30;
+   background-color: #f9f9f9;
+ }
+ .masonry-title, .masonry-description {
+   margin: 0;
+ }
+ .masonry-title {
+   font-weight: 700;
+   font-size: 1.1rem;
+   padding: 1rem 1.5rem;
+ }
+ .masonry-description {
+   padding: 1.5rem;
+   font-size: .75rem;
+   border-top: 3spx solid rgba(0, 0, 0, .05);
+ }
+ .masonry-footer {
+   font-size: .75em;
+   opacity: .25;
+   text-align: center;
+   padding-top: 3em; 
+   padding-bottom: 3em;
+   margin-bottom: -1.5em;
+   transition: opacity 1s ease-in-out;
+ }
+ .masonry-footer a {
+   color: currentColor;
+ }
+ .masonry-footer:hover, .masonry-footer:active, .masonry-footer:focus {
+   opacity: .75;
+ }
+
+
+ /*#############  -POST  ############*/
+
+/* Style the side navigation */
+.post{    
+  background-image: url("../images/header-comp.jpg");
+  display: flex;
+  height: 20rem;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.sidenav {
+  margin-top: 2%;
+  height: 80%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+}
+
+
+/* Side navigation links */
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+}
