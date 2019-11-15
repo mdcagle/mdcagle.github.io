@@ -1,0 +1,2 @@
+var newItemcounter = 1;
+var ourList = document .querySelector("#our-list");
